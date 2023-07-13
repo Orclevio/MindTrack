@@ -1,0 +1,268 @@
+:root {
+  --color-primary: rgba(59, 124, 246, 1);
+  --sidebar-width: 40%;
+  --menu-height: 250px;
+}
+input,
+select,
+textarea {
+  font-size: 16px;
+  touch-action: manipulation;
+}
+
+.loading-bar3 {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  height: 8px;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.loading-bar3-fill {
+  background-color: #007bff;
+  animation: loading-bar-animation 2s linear;
+  border-radius: 4px;
+  height: 90%;
+  width: 0;
+}
+@keyframes loading-bar-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.card {
+  display: flex;
+  padding: 0 1%;
+  width: 40%;
+  height: 280px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(57, 76, 96, 0.5);
+  transition: 0.8s;
+  margin-right: 2%;
+}
+select.campo-form {
+  color: gray;
+}
+
+.input-container {
+  display: flex;
+  padding: 0 1%;
+  
+}
+
+.input-container input {
+  flex: 1;
+  margin-right: 2px;  
+}
+
+/* Widget.css */
+
+/* Resto dos estilos do widget */
+
+.close-button {
+  margin-top:25% !important;
+  color: rgb(246, 59, 59)!important;
+  font-weight: bold !important;
+}
+.close-button2 {
+
+  margin-top:15% !important;
+  color: rgb(246, 59, 59)!important;
+  font-weight: bold !important;
+}
+
+
+
+.buttons {
+  padding-top: 2%;
+  width: var(--sidebar-width);
+}
+
+.buttons button {
+  margin: 0;
+  width:100%;
+  height: 36px;
+  padding: 0 0 0 3%;
+  background: transparent;
+  border-radius: 6px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  color: #a7a7a7;
+}
+
+.buttons button.active {
+  background: var(--color-primary);
+  color: #f9f9f9;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 auto;
+  margin-top: 0%;
+  align-items: center;
+  height: 260px;
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+}
+
+.wrapper::before {
+  top: 0;
+}
+
+.wrapper::after {
+  bottom: 0;
+
+}
+.campo-form2 {
+  margin-top: 5%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: small;
+  font-weight:normal;
+  width: 100%;
+  padding: 1%;
+  color: grey;
+  background-color: white;
+}
+
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: calc(var(----menu-height) * 3);
+  transition: 0.8s;
+}
+
+.content p {
+  display: flex;
+  align-items: center;
+  line-height: 1.6;
+  font-size: 13px;
+  margin-top: 0%;
+  color: #222222;
+  opacity: 0.5;
+}
+
+.block {
+  padding: 0 20px;
+  height: var(--menu-height);
+  text-align: center;
+}
+
+.block h2 {
+  padding-top: 20px;
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.circle3-button {
+  margin-top:1%;
+  background: var(--color-primary);
+  color: #f9f9f9;
+  height: 40px;
+  width: 40px;
+  font-size: 36px;
+  border-radius: 100px;
+  border-color: transparent;
+  font-size: 16px;
+}
+textarea.observacoes {
+  width: 95%;
+  height: 70%;
+  border: 1px solid rgba(90, 90, 90, 0.2);
+  border-radius: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: left;
+  resize: vertical; /* permite redimensionar verticalmente */
+}
+
+
+
+
+.circle4-button {
+    margin-top:10%;
+    background: var(--color-primary);
+    color: #f9f9f9;
+    height: 70px;
+    width: 70px;
+    font-size: 26px;
+    border-radius: 100px;
+    border-color: transparent;
+  }
+
+  @media screen and (min-width: 560px) and (max-width: 767px){
+    .card {
+      height: 270px;
+      width: 40%;
+    }
+    .campo-form2 {
+      font-size: 14px;
+    }
+    .buttons button {
+      font-size: 14px;
+    }
+  }
+  @media screen and (min-width: 430px) and (max-width: 559px){
+    .card {
+      height: 270px;
+      width: 40%;
+    }
+    .campo-form2 {
+      font-size: 13px;
+      height: 30px;
+    }
+    .buttons button {
+      font-size: 13px;
+    }
+  }
+  
+  @media screen and (max-width: 430px){
+    :root {
+      --sidebar-width: 30%;
+    }
+    .card {
+      width: 45%;
+      
+    }
+
+    .campo-form2 {
+      font-size: 12px;
+      height: 30px;      
+    }
+    .buttons button {
+      font-size: 11px;
+      text-align: center !important;
+    }
+    .close-button {
+      margin-top: 70% !important;
+      width: 200% !important;
+    }
+    .close-button2 {
+      margin-top: 50% !important;
+
+    }
+    .close-button2 img {
+      width: 22% !important;
+
+    }
+  }

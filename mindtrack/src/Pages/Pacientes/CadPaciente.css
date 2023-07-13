@@ -1,0 +1,31 @@
+@media screen and (max-width: 430px){
+    .Cadpac{
+        width: 250px!important;
+        padding: 1% !important;
+        left: 25% !important;
+    }
+
+}
+.loading-bar4 {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    height: 8px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  
+  .loading-bar4-fill {
+    background-color: #007bff;
+    animation: loading-bar-animation 2s linear;
+    border-radius: 4px;
+    height: 90%;
+    width: 0;
+  }
+  @keyframes loading-bar-animation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }

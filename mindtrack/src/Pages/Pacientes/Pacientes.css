@@ -1,0 +1,105 @@
+.container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 8% 90%;
+  gap: 10px;
+}
+.itemP2-1 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 99%;
+  margin-left: 0.5%;
+  
+}
+
+.tableP{
+  margin-top: 1%;
+}
+.tableP,
+.thP,
+.tdP {
+  border: 1px solid rgba(144, 145, 147,0.1);
+  border-collapse: collapse;
+  padding: 5px 2px;
+  table-layout: fixed;
+  text-align: center; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.circle-buttonP {
+  border-color: rgba(59, 124, 246, 1);
+  background-color: transparent;
+  color: rgba(59, 124, 246, 1); 
+  box-shadow: 0 10px 20px rgba(57, 76, 96, 0.2);
+  font-size: 18px;
+  height: 45px;
+  font-weight: bold; 
+  cursor: pointer;
+  border-radius: 15px;  
+}
+
+.Pesquisa{
+  font-size: 18px;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;   
+  cursor: pointer;
+  border-radius: 15px;  
+  border-color: rgba(179, 179, 179, 0.2);
+}
+
+.input-containerP input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.input-containerP .table th {
+  background-color: #f2f2f2;
+  
+}
+
+.input-containerP .table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.input-containerP th {
+  font-size: 30px;
+  vertical-align: middle;
+  height: 50px;
+  
+}
+
+.input-containerP td {
+  text-align: center;
+  font-size: 25px;
+  vertical-align: middle;
+  height: 50px;
+}
+
+@media screen and (max-width: 430px){
+
+  .circle-buttonP {
+    height: 50px;
+    font-size: 16px;
+    background-color: rgba(59, 124, 246, 1);
+    box-shadow: 10px 10px 40px rgba(57, 76, 96, 0.2);
+    color: white;
+  font-size: 16px;
+  }
+  .tableP{
+    margin-top: 5%;
+  }
+  .Pesquisa{
+    border-color: rgba(179, 179, 179, 0.5);
+    text-align: center;
+  }
+}
+
+
+

@@ -1,0 +1,30 @@
+.toast {
+    position: absolute;
+    top: 0; /* Adjusted position */
+    right: 0; /* Adjusted position */
+    /* Rest of the styles... */
+  }
+  
+.toast .progress:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 10%;
+    width: 30%;
+    background-color: #4070f4;
+
+}
+.progress.active:before{
+    animation: progress 5s linear forwards;
+}
+@keyframes progress {
+    0% {
+        right: 0;
+        width: 0;
+      }
+      100% {
+        width: 100%;
+        right: 100%;
+      }
+}

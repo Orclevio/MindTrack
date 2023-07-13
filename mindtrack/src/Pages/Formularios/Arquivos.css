@@ -1,0 +1,112 @@
+.forms{
+  padding: 1%;
+  
+}
+.formulario{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+}
+.file-input{
+  margin-top: 10px;
+}
+.file-button {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #3B7CF6;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    padding: 0.6%;
+    text-align: center;
+    
+  }
+  
+  .file-button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .file-button img {
+    width: 30%;
+    height: 30%;
+    margin-bottom: 0%;
+    margin-right: 10%;
+    margin-left: 8%;
+  }
+  
+  .file-button span {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .botAdicionar {
+    width: 8%;
+    height: 40%;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 1%;
+    color: white;
+    background-color:#3B7CF6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+  }
+
+  .botVoltar {
+    border: 2px solid rgba(244, 81, 130, 0.5);
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 1%;
+    color: black;
+    font-weight: bold;
+    background-color:transparent;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .nomeArq {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .botAcao {
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    color: white;
+    border-color: transparent;
+    font-weight: normal;
+    font-size:medium;    
+    background-color:transparent;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  .botAcao:hover {
+    text-decoration: underline; 
+    font-weight: bold; 
+  }
+
+
+  @media screen and (max-width: 430px){
+    .botAdicionar {
+      width: 30%;
+      height: 35px;
+      border-radius: 8px;  
+    }
+    .file-button {
+      width: 48%;
+    }
+  }
+
